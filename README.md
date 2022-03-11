@@ -3,6 +3,10 @@ the main SQL code:
 insert into student (id, name, courses)
 values(2, 'TestStudent', 'other');
 
+delete from student where id = 1;
+
+
+
 
 CREATE FUNCTION public.table_update_notify()
     RETURNS trigger

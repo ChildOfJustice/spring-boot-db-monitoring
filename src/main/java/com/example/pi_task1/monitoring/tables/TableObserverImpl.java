@@ -1,5 +1,6 @@
-package com.example.pi_task1.monitoring;
+package com.example.pi_task1.monitoring.tables;
 
+import com.example.pi_task1.monitoring.Subscriber;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -7,21 +8,20 @@ import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 @Component
-public class DatabaseObserverImpl implements DatabaseObserver {
+public class TableObserverImpl implements TableObserver {
 
-    private static final Logger log = LoggerFactory.getLogger(DatabaseObserverImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(TableObserverImpl.class);
 
-    private ArrayList<Subscriber> mySubscribers = new ArrayList<>();
+    private final ArrayList<Subscriber> mySubscribers = new ArrayList<>();
     
     
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     @Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
-        log.info("The time is now {}", dateFormat.format(new Date()));
+        //log.info("The time is now {}", dateFormat.format(new Date()));
     }
 
     @Override
@@ -35,9 +35,7 @@ public class DatabaseObserverImpl implements DatabaseObserver {
     }
 
     @Override
-    public void notifySubscribers() {
-        mySubscribers.forEach(
-                subscriber -> subscriber.update()
-        );
+    public void notifySubscribers(String message) {
+        mySubscribers.forEach(subscriber -> subscriber.update(message));
     }
 }
