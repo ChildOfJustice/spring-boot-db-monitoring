@@ -13,15 +13,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @EnableScheduling
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-public class PiTask1Application implements CommandLineRunner {
+public class PeTask1Application implements CommandLineRunner {
 
-    private static final Logger log = LoggerFactory.getLogger(PiTask1Application.class);
+    private static final Logger log = LoggerFactory.getLogger(PeTask1Application.class);
 
     @Autowired
     TableObserverInitializer tableObserverInitializer;
 
     public static void main(String args[]) {
-        SpringApplication.run(PiTask1Application.class, args);
+        SpringApplication.run(PeTask1Application.class, args);
     }
 
     @Override
