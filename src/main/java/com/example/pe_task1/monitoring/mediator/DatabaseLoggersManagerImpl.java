@@ -1,6 +1,6 @@
-package com.example.pi_task1.monitoring.mediator;
+package com.example.pe_task1.monitoring.mediator;
 
-import com.example.pi_task1.monitoring.logging.DbStateLogger;
+import com.example.pe_task1.monitoring.logging.DbStateLogger;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

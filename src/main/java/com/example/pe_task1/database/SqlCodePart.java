@@ -1,4 +1,4 @@
-package com.example.pi_task1.database;
+package com.example.pe_task1.database;
 
 public class SqlCodePart {
 

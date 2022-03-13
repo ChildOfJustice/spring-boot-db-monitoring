@@ -1,6 +1,6 @@
-package com.example.pi_task1.database;
+package com.example.pe_task1.database;
 
-import com.example.pi_task1.monitoring.tables.TableObserver;
+import com.example.pe_task1.monitoring.tables.TableObserver;
 import com.impossibl.postgres.api.jdbc.PGConnection;
 import com.impossibl.postgres.api.jdbc.PGNotificationListener;
 import org.slf4j.Logger;

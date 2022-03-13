@@ -1,4 +1,4 @@
-package com.example.pi_task1.model;
+package com.example.pe_task1.model;
 
 import javax.persistence.*;
 

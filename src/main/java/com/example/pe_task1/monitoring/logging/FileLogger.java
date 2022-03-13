@@ -1,10 +1,9 @@
-package com.example.pi_task1.monitoring.logging;
+package com.example.pe_task1.monitoring.logging;
 
-import com.example.pi_task1.monitoring.mediator.DatabaseLoggersManager;
-import com.example.pi_task1.monitoring.tables.TableObserverImpl;
+import com.example.pe_task1.monitoring.mediator.DatabaseLoggersManager;
+import com.example.pe_task1.monitoring.tables.TableObserverImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component

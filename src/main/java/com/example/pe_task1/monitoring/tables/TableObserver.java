@@ -1,6 +1,6 @@
-package com.example.pi_task1.monitoring.tables;
+package com.example.pe_task1.monitoring.tables;
 
-import com.example.pi_task1.monitoring.Subscriber;
+import com.example.pe_task1.monitoring.Subscriber;
 
 public interface TableObserver {
 

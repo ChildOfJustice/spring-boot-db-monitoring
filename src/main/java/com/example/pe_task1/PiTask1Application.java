@@ -1,6 +1,6 @@
-package com.example.pi_task1;
+package com.example.pe_task1;
 
-import com.example.pi_task1.database.TableObserverInitializer;
+import com.example.pe_task1.database.TableObserverInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

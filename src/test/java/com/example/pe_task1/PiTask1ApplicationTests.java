@@ -1,4 +1,4 @@
-package com.example.pi_task1;
+package com.example.pe_task1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
